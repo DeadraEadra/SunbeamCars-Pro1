@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SunbeamCars Inc.</title>
+    <script src="https://kit.fontawesome.com/5d9287a429.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/sun-rays.png" />
+    <link rel="stylesheet" href="about-us.css" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>SunbeamCars Inc.</h1>
+        </a>
+        <a class="about-us" href="about-us.html">About us</a>
+        <a class="log-in" href="#"><i class="fas fa-sign-in-alt"></i></a>
+    </header>
+
+    <div class="video-container">
+        <video muted id="video">
+            <source src="img/video.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+        <div class="control-buttons">
+            <button onclick="enableMute()"><img class="video-icon" id="volume" src="img/volume-off.svg"
+                    alt="volume is off"></button>
+            <button onclick="playPause()"><img class="video-icon" id="pause" src="img/pause.svg"
+                    alt="pause video"></button>
+        </div>
+    </div>
+
+    <h1 class="header tracking-in-expand">A car for any kind of weather</h1>
+
+    <section class="more-info">
+
+        <div class="info-container">
+            <h2 class="info-header typewriter" id="info-header">Hey! We are SunbeamCars!</h2>
+            <p class="info-paragraph">We're no strangers to love <br>
+                You know the rules and so do We<br>
+                A full commitment's what We're thinking of<br>
+                You wouldn't get this from any other car<br>
+                We just wanna tell you how We're feeling<br>
+                Gotta make you understand<br>
+                Never gonna give you up<br>
+                Never gonna let you down<br>
+                Never gonna drive around and desert you<br>
+                Never gonna make you cry<br>
+                Never gonna say goodbye<br>
+                Never gonna tell a lie and hurt you<br>
+        </div>
+    </section>
+
+    <section aria-label="Newest photos">
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev"><img class="button-img"
+                    src="img/chevron-left-solid.svg" alt="button previous"></button>
+            <button class="carousel-button next" data-carousel-button="next"><img class="button-img"
+                    src="img/angle-right-solid.svg" alt="button next"></button>
+
+            <ul data-slides>
+                <li class="slide" data-active><img class="slide-img" src="img/van-slide.jpg" alt="van on a beach"></li>
+                <li class="slide"><img class="slide-img" src="img/desert-slide.jpg" alt="jeep on a desert"></li>
+                <li class="slide"><img class="slide-img" src="img/winter-slide.jpg" alt="van in a winter forest"></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <script src="about-us.js"></script>
+</body>
+
+</html>

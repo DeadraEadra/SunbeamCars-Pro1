@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SunbeamCars Inc.</title>
+    <script src="https://kit.fontawesome.com/5d9287a429.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
+    <link rel="icon" href="img/sun-rays.png" />
+    <link rel="stylesheet" href="style3.css" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><h1>SunbeamCars Inc.</h1></a>
+        <a class="about-us" href="about-us.html">About us</a>
+        <a class="log-in" href="#"><i class="fas fa-sign-in-alt"></i></a>
+    </header>
+    <img class="top-image" src="img/roadtrip.png" alt="Asphalt road surounded by a pine forest">
+
+    <main>
+        <form class="form" id="form">
+            <h2>Your information</h2>
+            <div class="grid-table">
+                <div class="grid-element">
+                    <div class="form-element">
+                        <label>First name</label>
+
+                        <input type="text" id="first-name" required />
+                    </div>
+
+                </div>
+                <div class="grid-element">
+                    <label>Last name</label>
+
+                    <input type="text" id="last-name" required />
+                </div>
+                <div class="grid-element">
+                    <label>Street name</label>
+
+                    <input type="text" id="street-name" required />
+                </div>
+                <div class="grid-element">
+                    <label>Number/floor</label>
+
+                    <input type="text" id="number-floor" required />
+                </div>
+                <div class="grid-element">
+                    <label>Postal code & City</label>
+                    <input type="text" id="postal-code" list="codelist" required />
+                    <datalist id="codelist"></datalist>
+                </div>
+                <div class="grid-element">
+                    <input type="checkbox" id="adult">I am 18 years old<br>
+                </div>
+            </div>
+            <button type="submit">Book now</button>
+
+        </form>
+
+        <booking-info></booking-info>
+        <section>
+            <div class="rental-information-container">
+                <h2 class="rental-div header">Rental information</h2>
+
+                <div class="total">
+                    <p>All inclusive:</p>
+                    <div id="totaloutput"></div>
+                    <p>incl. VAT</p>
+                </div>
+
+                <div class="name-date">
+                    <div class="bold-font" id="nameoutput"></div>
+                    <div id="datesoutput"></div>
+                </div>
+
+
+                <div class="rent-price">
+                    <div id="priceoutput"></div>
+                    <p> incl. VAT
+                    <p>
+                </div>
+
+            </div>
+
+            <div class="accessories-container">
+                <h2 class="header">Accessories</h2>
+                <div id="output" class="output"></div>
+
+                <div class="accessories">
+                    <div id="accessoriesoutput"></div>
+                    <p> incl. VAT
+                    <p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="javascript3.js"></script>
+
+</body>
+
+</html>

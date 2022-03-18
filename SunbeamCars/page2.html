@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SunbeamCars Inc.</title>
+    <script src="https://kit.fontawesome.com/5d9287a429.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
+    <link rel="icon" href="img/sun-rays.png" />
+    <link rel="stylesheet" href="style2.css" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><h1>SunbeamCars Inc.</h1></a>
+        <a class="about-us" href="about-us.html">About us</a>
+        <a class="log-in" href="#"><i class="fas fa-sign-in-alt"></i></a>
+    </header>
+    <img class="top-image" src="img/roadtrip.png" alt="Asphalt road surounded by a pine forest">
+    <main>
+        <section class="chosen-info">
+            <h3>Let's see... <br> What BROOM BROOM did you choose?</h3>
+
+            <div id="info-output"></div>
+            <!-- <div id="car-name"></div>
+        <div id="dates"></div>
+        <div id="cost"></div>
+        <p>Including VAT</p> -->
+
+        </section>
+
+        <form id="accessories-form">
+            <label class="h3">Select accessories (excl. VAT)</label>
+            <br>
+            <div class="grid-container">
+                <div class="grid-element"><input type="checkbox" data-item="Second driver" class="slist" value="199"
+                        onchange="calculateTotal(this, this.value)">Second driver, dkr. 199,00</div>
+                <div class="grid-element"><input type="checkbox" data-item="Child seat" class="slist" value="155"
+                        onchange="calculateTotal(this, this.value)">Child seat (5-12), dkr. 155,00</div>
+                <div class="grid-element"><input type="checkbox" data-item="Roadside Aid" class="slist" value="120"
+                        onchange="calculateTotal(this, this.value)">Roadside Aid, dkr. 120,00</div>
+                <div class="grid-element"><input type="checkbox" data-item="Baby seat" class="slist" value="100"
+                        onchange="calculateTotal(this, this.value)">Baby seat (0-1 year), dkr. 100,00</div>
+                <div class="grid-element"><input type="checkbox" data-item="Child seat" class="slist" value="140"
+                        onchange="calculateTotal(this, this.value)">Child seat (1-4 year), dkr. 140,00</div>
+                <div class="grid-element"><input type="checkbox" data-item="GPS navigation" class="slist" value="250"
+                        onchange="calculateTotal(this, this.value)">GPS navigation, dkr. 250,00</div>
+                <div class="grid-element"><input type="checkbox" data-item="Snow chains" class="slist" value="188"
+                        onchange="calculateTotal(this, this.value)">Snow chains, dkr. 188,00</div>
+            </div>
+
+
+            <button type="submit">Continue</button>
+        </form>
+
+        <section class="total">
+            <p>All inclusive:</p>
+            <div id="totaloutput"></div>
+            <p>incl. VAT</p>
+        </section>
+
+    </main>
+
+    <script src="java2.js"></script>
+</body>
+
+</html>

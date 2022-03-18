@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SunbeamCars Inc.</title>
+    <script src="https://kit.fontawesome.com/5d9287a429.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
+    <link rel="icon" href="img/sun-rays.png" />
+    <link rel="stylesheet" href="style4.css" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>SunbeamCars Inc.</h1>
+        </a>
+        <a class="about-us" href="about-us.html">About us</a>
+        <a class="log-in" href="#"><i class="fas fa-sign-in-alt"></i></a>
+    </header>
+    <img class="top-image" src="img/roadtrip.png" alt="Asphalt road surounded by a pine forest">
+
+    <main>
+
+        <section class="receipt">
+            <h2>Thanks! We will have the car ready for you!</h2>
+            <div>
+                <!-- Current time -->
+                <m-currenttime></m-currenttime>
+
+                <!-- Form output -->
+                <div id="formoutput"></div>
+
+            </div>
+
+            <!-- Print button -->
+            <button class="no-print" onclick="window.print()">Print</button>
+        </section>
+
+        <section class="rental-information">
+            <div class="rental-information-container">
+                <h2 class="rental-div header">Rental information</h2>
+
+                <div class="total">
+                    <p>All inclusive:</p>
+                    <div id="totaloutput"></div>
+                    <p>incl. VAT</p>
+                </div>
+
+                <div class="name-date">
+                    <div class="bold-font" id="nameoutput"></div>
+                    <div id="datesoutput"></div>
+                </div>
+
+
+                <div class="rent-price">
+                    <div id="priceoutput"></div>
+                    <p> incl. VAT
+                    <p>
+                </div>
+
+            </div>
+
+            <div class="accessories-container">
+                <h2 class="header">Accessories</h2>
+                <div id="output" class="output"></div>
+
+                <div class="accessories">
+                    <div id="accessoriesoutput"></div>
+                    <p> incl. VAT
+                    <p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="javascript4.js"></script>
+
+    <script src="lastmodified.js"></script>
+    <script src="currenttime.js"></script>
+
+
+</body>
+
+</html>

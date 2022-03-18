@@ -1,0 +1,175 @@
+body {
+    background-color: rgb(248, 247, 247);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* HEADER */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 100%;
+    gap: 100px;
+    height: 20px;
+    position: relative;
+    bottom: 10px;
+  }
+  .about-us {
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  .top-image {
+    width: 95%;
+    height: 170px;
+    object-fit: cover;
+    object-position: bottom;
+}
+  
+/* HEADER */
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: medium;
+    font-size: 1.25rem;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+  }
+  .log-in::after {
+    content: "  Log in";
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  label {
+    font-family: "Open Sans", sans-serif;
+    font-weight: medium;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  h3 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+    font-weight: 40px;
+  }
+  .h3 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+    font-weight: 40px;
+  }
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: medium;
+    font-size: 0.85rem;
+  }
+
+
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 4vw;
+    padding-bottom: 30px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9CD73ff;
+}
+.grid-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 37vw;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+.grid-element {
+  width: 150px;
+}  
+button {
+  width: 100px;
+  background-color: #C16351ff;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: medium;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: rgb(248, 195, 89);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 50px;
+  background-color: #C16351ff;
+  padding: 15px 30px 15px 30px;
+}
+.rental-information-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+}
+.rental-div {
+  margin-bottom: -10px;
+}
+.header {
+  flex-wrap: nowrap;
+}
+.bold-font {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+.name-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.accessories-container {
+  width: 150px;
+}
+.output {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+/* colours 
+--ming: #3F6A6Eff;
+--desert-sand: #E7CEB2ff;
+--cedar-chest: #C16351ff;
+--pewter-blue: #95AFB5ff;
+--white: #FFFFFFff;
+--gold-crayola: #EFC085ff; */
